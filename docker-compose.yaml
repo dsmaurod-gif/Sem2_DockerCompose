@@ -24,3 +24,19 @@ services:
       - "3003:3000"
     environment:
       - MESSAGE=Bienvenido al Lab02 - Rodriguez
+  
+  db:
+    image: postgres:14
+    container_name: db_postgres
+    restart: always
+    environment:
+    - POSTGRES_PASSWORD=PASSWORD
+    - POSTGRES_USER=DIEGO
+    - POSTGRES_DB=SEM2
+    ports:
+    - "5432:5432"
+    volumes:
+    - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
