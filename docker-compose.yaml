@@ -1,7 +1,26 @@
 version: '0'
 
 services:
-  app:
-    image: nmatsui/hello-world-api
+  app1:
+    container_name: app1
+    build: ./api
     ports:
-      - "3000:3000"
+      - "3001:3000"
+    environment:
+      - MESSAGE=Bienvenido a Lab02 - Diego
+
+  app2:
+    container_name: app2
+    build: ./api
+    ports:
+      - "3002:3000"
+    environment:
+      - MESSAGE=Bienvenido a Lab02 - Mauricio
+
+  app3:
+    container_name: app3
+    build: ./api
+    ports:
+      - "3003:3000"
+    environment:
+      - MESSAGE=Bienvenido al Lab02 - Rodriguez
