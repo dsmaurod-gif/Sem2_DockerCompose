@@ -23,7 +23,7 @@ class Config {
         return port;
     }
     get message() {
-        process.env.MESSAGE || this.DEFAULT_MESSAGE;
+        return 'Diego Mauricio' || process.env.MESSAGE || this.DEFAULT_MESSAGE;
     }
     get logLevel() {
         let logLevel = process.env.LOG_LEVEL || this.DEFAULT_LOG_LEVEL;
