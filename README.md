@@ -12,6 +12,7 @@ API
     docker run -d --rm -p 3000:3000 nmatsui/hello-world-api
 BD 
 - Postgre SQL
+$ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
 
 # Indicaciones
 
