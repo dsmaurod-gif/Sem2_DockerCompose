@@ -22,6 +22,16 @@ Ejecutar...
 ```bash
 docker compose up -d
 ```
+```bash
+docker logs
+```
+```bash
+docker ps
+```
+```bash
+docker compose version
+```
+
 
 ## Configuracion por entorno
 
