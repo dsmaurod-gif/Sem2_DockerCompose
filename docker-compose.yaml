@@ -1,0 +1,7 @@
+version: '0'
+
+services:
+  app:
+    image: nmatsui/hello-world-api
+    ports:
+      - "3000:3000"
